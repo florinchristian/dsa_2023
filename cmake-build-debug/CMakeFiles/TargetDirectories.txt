@@ -1,0 +1,3 @@
+/Users/cristi/CLionProjects/dsa_2023/cmake-build-debug/CMakeFiles/dsa_2023.dir
+/Users/cristi/CLionProjects/dsa_2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cristi/CLionProjects/dsa_2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir
