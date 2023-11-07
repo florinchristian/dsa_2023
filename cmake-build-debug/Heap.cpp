@@ -64,4 +64,8 @@ public:
 
         return result;
     }
+
+    bool isEmpty() {
+        return this->heap.empty();
+    }
 };
