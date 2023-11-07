@@ -1,7 +1,3 @@
-//
-// Created by Cristi on 07.11.2023.
-//
-
 #include <vector>
 #include <map>
 
