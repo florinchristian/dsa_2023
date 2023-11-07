@@ -13,7 +13,7 @@ private:
     void keepUp(int index) {
         int parent = (index - 1) / 2;
 
-        while (index > 0 && this->heap[index] < this->heap[parent]) {
+        while (index > 0 && this->heap[index] > this->heap[parent]) {
             swap(this->heap[index], this->heap[parent]);
 
             index = parent;
@@ -27,11 +27,11 @@ private:
         int leftChild = index * 2 + 1;
         int rightChild = index * 2 + 2;
 
-        if (leftChild < this->heap.size() && this->heap[leftChild] < this->heap[smallest]) {
+        if (leftChild < this->heap.size() && this->heap[leftChild] > this->heap[smallest]) {
             smallest = leftChild;
         }
 
-        if (rightChild < this->heap.size() && this->heap[rightChild] < this->heap[smallest]) {
+        if (rightChild < this->heap.size() && this->heap[rightChild] > this->heap[smallest]) {
             smallest = rightChild;
         }
 
@@ -50,7 +50,7 @@ public:
         this->keepUp(index);
     }
 
-    int getMinimum() {
+    int getMaximum() {
         if (heap.empty()) {
             throw out_of_range("Heap is empty.");
         }
